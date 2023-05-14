@@ -99,25 +99,57 @@ for ch in s:
         print(ch,end="")
 '''
 
-#string literals and immutability
+# string literals and immutability
 
 
-#Data Structures
-#1.List
-#2.Tuple
-#3.Set
-#4.Dictionary
-#5.Frozenset
+# Data Structures
+# 1.List
+# 2.Tuple
+# 3.Set
+# 4.Dictionary
+# 5.Frozenset
 
-#List
-lst=[1,2,3,4,"xx",[10,20,30]]
+'''
+# List
+lst = [1, 2, 3, 4, "xx", [10, 20, 30]]
 print(lst[3])
 print(lst[5][1])
+'''
 
+'''
+#add data in the list
 lst.append(45)
 lst.insert(2,100)
 print(lst)
-lst2=["aaa","bbb","ccc"]
+lst2 = ["aaa", "bbb", "ccc"]
 lst.extend(lst2)
 print(lst)
+'''
+'''
+#delete the data from the list
+print(lst)
+lst.pop()
+print(lst)
+
+lst.remove(45)
+print(lst)
+'''
+#sorting and reversing
+lst=[12,1,3,14,15,34,7,12,3,14,12]
+lst.reverse()
+print(lst)
+lst.sort()
+print(lst)
+lst.sort(reverse=True)
+print(lst)
+print(lst.count(12))
+
+lst=[1,2,3]
+lst1=lst
+lst.append(34)
+print(lst,lst1)
+lst2=lst.copy()
+lst.append(100)
+print(lst,lst1)
+print(lst2)
 
